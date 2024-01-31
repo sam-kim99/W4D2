@@ -22,7 +22,7 @@ class Board
     def move_piece(start_pos, end_pos)
         # Nil or NullPiece & end_pos validity
         raise 'Invalid move.' if self[start_pos].nil? || !self[end_pos].nil?
-        piece = self[start_pos]
+        piece = self[start_pos] #Piece instance
         self[end_pos] = piece
         self[start_pos] = nil
     end
