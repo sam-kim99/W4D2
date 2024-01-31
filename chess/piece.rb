@@ -7,4 +7,12 @@ class Piece
         @board = rows
         @pos = start_pos # => [3, 4] => [2, 3]
     end
+    
+    def symbol
+        " "
+    end
+
+    def to_s
+        puts symbol
+    end
 end

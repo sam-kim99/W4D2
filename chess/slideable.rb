@@ -27,8 +27,7 @@ module Slideable
 
     def march(vector)
         result = []
-        current_pos = pos
-        row, col = current_pos
+        row, col = pos
         drow, dcol = vector
         new_pos = [row + drow, col + dcol] #[1,0]
         until new_pos[0] > 7 || new_pos[0] < 0 || new_pos[1] > 7 || new_pos[1] < 0 # if row + drow > 7 || < 0 + col + dcol > 7 || < 0
@@ -46,7 +45,6 @@ module Slideable
                 end
             end
         end
-
         result
     end
 end
