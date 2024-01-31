@@ -3,9 +3,10 @@ class Board
     attr_reader :rows
     def initialize
         @rows = Array.new(8) {Array.new(8)}
-        (0..7).each do |i|
-            @rows[i].map! {|tile| tile = Piece.new} if i <= 1 || i >= 6
-        end
+        
+        # (0..7).each do |i|
+        #     @rows[i].map! {|tile| tile = Piece.new} if i <= 1 || i >= 6
+        # end
     end
     
     def [](pos)

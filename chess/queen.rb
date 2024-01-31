@@ -9,3 +9,9 @@ class Queen < Piece
         STRAIGHT_VECTORS + DIAGONAL_VECTORS
     end
 end
+
+b = Board.new
+q = Queen.new(:white, b, [0,0])
+b[q.pos] = q
+b[[4,0]] = Piece.new(:black, b, [4,0])
+p q.moves
