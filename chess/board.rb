@@ -12,7 +12,11 @@
 # NullPiece => [2..5][0..7]
 
 class Piece
-    
+    def initialize(color, rows, start_pos)
+        @color = color
+        @board = rows
+        @pos = start_pos # => [3, 4] => [2, 3]
+    end
 end
 
 class Board
